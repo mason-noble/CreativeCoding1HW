@@ -1,0 +1,7 @@
+GUI and CLI are two different ways to navigate your files. Graphical user interface, or GUI, utilizes the electronic device's graphics such as icons or other visual cues so users can easily interact with their device. Command line interface, or CLI, doesn't rely on visuals and is instead text-based. 
+
+You can access your directory with both options; however, you can do much more with a CLI. It guarantees full control of the OS, displays more information and ensures a speedier development process than is to be expected of a GUI. Another advantage a CLI would have is the quicker manipulation of files and directories.
+
+At first, learning CLI seems to be much more complicated than learning GUI. In fact, it may seem like more hassle than its worth. But if you want better understanding of your operating system or wish to delve into the wonderful world of coding, then learning how to navigate a CLI would be highly optimal. 
+
+Especially if you have been utilizing only a GUI for the entire time you've been using a device, it would be a learning curve. Once you get used to it, you will have easily had full access to your computer. Even to options that aren’t expressly made available while using a GUI!
