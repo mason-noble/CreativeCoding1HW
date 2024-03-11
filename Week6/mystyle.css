@@ -11,3 +11,10 @@ span {
 ul{
     text-align: center;
 }
+
+.pgreen{
+    color:darkolivegreen;
+}
+.bigfontsize{
+    font-size: x-large;
+}
