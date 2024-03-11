@@ -4,8 +4,10 @@ body {
 }
 h1 {
     color: green;
-    margin-left: 20px;
 }
 span {
     color:darkgreen;
+}
+ul{
+    text-align: center;
 }
