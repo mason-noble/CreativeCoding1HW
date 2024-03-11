@@ -2,6 +2,7 @@ body {
     background-color: lightgreen;
     text-align:center;
 }
+
 h2 {
     color: darkgreen;
 }
@@ -9,7 +10,7 @@ h3 {
     color: darkgreen;
 }
 span {
-    color:darkolivegreen;
+    color:rgb(12, 68, 11);
 }
 ul{
     text-align: center;
