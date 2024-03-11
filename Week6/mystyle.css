@@ -18,3 +18,9 @@ ul{
 .bigfontsize{
     font-size: x-large;
 }
+#italic{
+    font-style: italic;
+}
+#diffont{
+    font-family: sans-serif;
+}
