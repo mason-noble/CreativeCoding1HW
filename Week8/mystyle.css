@@ -1,0 +1,30 @@
+body {
+    background-color: lightgreen;
+    text-align:center;
+}
+
+h2 {
+    color: darkgreen;
+}
+h3 {
+    color: darkgreen;
+}
+span {
+    color:rgb(12, 68, 11);
+}
+ul{
+    text-align: center;
+}
+
+.pgreen{
+    color:darkolivegreen;
+}
+.bigfontsize{
+    font-size: x-large;
+}
+#italic{
+    font-style: italic;
+}
+#diffont{
+    font-family: sans-serif;
+}
