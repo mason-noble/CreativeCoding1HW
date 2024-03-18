@@ -1,0 +1,40 @@
+<html>
+    <title>Forms</title>
+    <head>
+        <script>
+            function getData()
+            {
+                var name = document.getElementById("txtName").value;
+                var email = document.getElementById("txtEmail").value;
+                var terms = document.getElementById("chkTerms").value;
+
+                document.getElementById("finalResult").innerHTML = "Name: " + name + "Email: " + email + "Terms: " + terms;
+            }
+
+        </script>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body id="diffont">
+        <table class="center">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="txtName"></td>
+            </tr>
+            <tr>
+                <td>Email Address</td>
+                <td><input type="text" id="txtEmail"></td>
+            </tr>
+            <tr>
+                <td>Terms of Service</td>
+                <td><input type="checkbox" id="chkTerms"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="btnSubmit" onClick="getData();">Submit</button></td>
+            </tr>
+        </table>
+        <div id="finalResult"></div>
+    
+        <p class="bigfontsize"><a href="index.html" style="text-decoration:none" target="_self">Back to Index!</a><br>
+        <a href="contact.html" style="text-decoration:none" targer="_self">Back to my contacts!</a></p>
+    </body>
+ </html>
