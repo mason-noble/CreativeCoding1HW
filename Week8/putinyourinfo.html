@@ -1,40 +1,62 @@
-<html>
-    <title>Forms</title>
-    <head>
-        <script>
-            function getData()
-            {
-                var name = document.getElementById("txtName").value;
-                var email = document.getElementById("txtEmail").value;
-                var terms = document.getElementById("chkTerms").value;
-
-                document.getElementById("finalResult").innerHTML = "Name: " + name + "Email: " + email + "Terms: " + terms;
-            }
-
-        </script>
-        <link rel="stylesheet" href="mystyle.css">
-    </head>
-    <body id="diffont">
-        <table class="center">
-            <tr>
-                <td>Name</td>
-                <td><input type="text" id="txtName"></td>
-            </tr>
-            <tr>
-                <td>Email Address</td>
-                <td><input type="text" id="txtEmail"></td>
-            </tr>
-            <tr>
-                <td>Terms of Service</td>
-                <td><input type="checkbox" id="chkTerms"></td>
-            </tr>
-            <tr>
-                <td colspan="2"><button id="btnSubmit" onClick="getData();">Submit</button></td>
-            </tr>
-        </table>
-        <div id="finalResult"></div>
+<html>   
+   <head>
+      <title>Form Validation</title>      
+      <script type = "text/javascript">
+         function validate() {
+   
+   if( document.myForm.Name.value == "" ) {
+      alert( "Please provide your name!" );
+      document.myForm.Name.focus() ;
+      document.myForm.Name.style.borderColor = "red";
+      return false;
+   }
+   if( document.myForm.EMail.value == "" ) {
+      alert( "Please provide your Email!" );
+      document.myForm.EMail.focus() ;
+      document.myForm.EMail.style.borderColor = "red";
+      return false;
+   }
+   if(document.myForm.TOS.checked == false) {
+    alert( "Please agree to the Terms of Service!");
+    document.myForm.TOS.focus() ;
+    document.myForm.TOS.style.borderColor = "red";
+    return false;
+   }
+   return( true );
+}
+      </script>
+      <link rel="stylesheet" href="mystyle.css">      
+   </head>
+   
+   <body id="diffont">
+    <h1>Please do not be a weirdo when filling this out or interacting with me! That's it, those are like, the only terms I'll ask you to follow.</h1>  
     
-        <p class="bigfontsize"><a href="index.html" style="text-decoration:none" target="_self">Back to Index!</a><br>
-        <a href="contact.html" style="text-decoration:none" targer="_self">Back to my contacts!</a></p>
-    </body>
- </html>
+    <form name = "myForm" onsubmit = "return(validate());">
+         <table class="center">
+            
+            <tr>
+               <td align = "right">Name</td>
+               <td><input type = "text" name = "Name" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Email</td>
+               <td><input type = "text" name = "EMail" /></td>
+            </tr>
+            
+            <tr>
+                <td align = "right">Terms of Service</td>
+                <td><input type = "checkbox" name = "TOS" /></td>
+            </tr>
+
+            <tr>
+               <td align = "right"></td>
+               <td><input type = "submit" value = "Submit" /></td>
+            </tr>
+            
+         </table>
+      </form>
+      <p class="bigfontsize"><a href="index.html" style="text-decoration:none" target="_self">Back to Index!</a><br>
+      <a href="contact.html" style="text-decoration:none" target="_self">Back to my Contact Sheet!</a></p>      
+   </body>
+</html>
