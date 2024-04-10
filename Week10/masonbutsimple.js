@@ -71,10 +71,10 @@ function draw() {
   { movement*= -1;
   }
   y1 += movement;
+
   
-  text('Mason Noble',230,490)
-  textSize(17)
-  
-  text('Mason but Simple', 125,20)
+  let textSizeValue = map(sin(frameCount * .1), -1, 1, 20, 25);
+  text('Mason Noble - Simple', 200 / 2, 50 / 2);
+  textSize (textSizeValue);
   
 }
