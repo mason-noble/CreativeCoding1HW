@@ -72,7 +72,7 @@ function draw() {
   }
   y1 += movement;
 
-  
+//So I had a hard time with this and I got my coding wizard dad to help. Is it what we learned? ...No. But I think I accomplished a result!  
   let textSizeValue = map(sin(frameCount * .1), -1, 1, 20, 25);
   text('Mason Noble - Simple', 200 / 2, 50 / 2);
   textSize (textSizeValue);
