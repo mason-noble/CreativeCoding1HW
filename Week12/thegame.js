@@ -33,80 +33,108 @@ function setup() {
 }
 
 function draw() {
+  //generate background
   background(50, 100, 50);
   stroke(0);
   fill(0);
 
-  // call createBorders function
+  // function to generate borders
   createBorders(10);
-
-  // exit message
-  textSize(16);
-  text("EXIT", width - 270, height - 10);
 
   //createCharacter(200,350);
   drawCharacter();
   characterMovement();
 
-  // first enemy
-  fill(37, 160, 150);
-  circle(shapeX, shapeY, 15);
-  
-  // second enemy
-  fill (50, 40, 100);
-  circle (shapeX2, shapeY2, 10);
+  // create the enemies
+  createObstacle1();
+  createObstacle2();
 
-  // get a random speed when the first enemy starts
-  shapeXSpeed = Math.floor(Math.random() * Math.floor(Math.random() / 10) - 1);
-  shapeYSpeed = Math.floor(Math.random() * Math.floor(Math.random() / 10) + 1);
-  
-   // get a random speed when the second enemy starts
-  shapeX2Speed = Math.floor(Math.random() * Math.floor(Math.random() / 10) - 2);
-  shapeY2Speed = Math.floor(Math.random() * Math.floor(Math.random() / 10) + 2);
-
-  // move first enemy
-  shapeX += shapeXSpeed;
-  shapeY += shapeYSpeed;
-  // check to see if the shape has gone out of bounds
-  if (shapeX > width) {
-    shapeX = 0;
-  }
-  if (shapeX < 0) {
-    shapeX = width;
-  }
-  if (shapeY > height) {
-    shapeY = 0;
-  }
-  if (shapeY < 0) {
-    shapeY = height;
-  }
-  
-   // move second enemy
-  shapeX2 += shapeX2Speed;
-  shapeY2 += shapeY2Speed;
-  // check to see if the shape has gone out of bounds
-  if (shapeX2 > width) {
-    shapeX2 = 0;
-  }
-  if (shapeX2 < 0) {
-    shapeX2 = width;
-  }
-  if (shapeY2 > height) {
-    shapeY2 = 0;
-  }
-  if (shapeY2 < 0) {
-    shapeY2 = height;
-  }
+  //move the enemies
+  moveObstacle1();
+  moveObstacle2();
 
   // exit check
+  exitCheck();
+
+  // exit message
+  exitMessage();
+
+  // mouse click shapes
+  mouseClickShape();
+}
+
+function createObstacle1 (){
+  fill(37, 160, 150);
+  circle(shapeX, shapeY, 15);
+}
+
+function createObstacle2 (){
+  fill (50, 40, 100);
+  circle (shapeX2, shapeY2, 10);
+   
+}
+
+function moveObstacle1(){
+      // get a random speed when the first enemy starts
+      shapeXSpeed = Math.floor(Math.random() * Math.floor(Math.random() / 10) - 1);
+      shapeYSpeed = Math.floor(Math.random() * Math.floor(Math.random() / 10) + 1);
+    // move first enemy
+    shapeX += shapeXSpeed;
+    shapeY += shapeYSpeed;
+    // check to see if the shape has gone out of bounds
+    if (shapeX > width) {
+      shapeX = 0;
+    }
+    if (shapeX < 0) {
+      shapeX = width;
+    }
+    if (shapeY > height) {
+      shapeY = 0;
+    }
+    if (shapeY < 0) {
+      shapeY = height;
+    }
+}
+
+function moveObstacle2(){
+       // get a random speed when the second enemy starts
+       shapeX2Speed = Math.floor(Math.random() * Math.floor(Math.random() / 10) - 2);
+       shapeY2Speed = Math.floor(Math.random() * Math.floor(Math.random() / 10) + 2);
+     // move second enemy
+     shapeX2 += shapeX2Speed;
+     shapeY2 += shapeY2Speed;
+     // check to see if the shape has gone out of bounds
+     if (shapeX2 > width) {
+       shapeX2 = 0;
+     }
+     if (shapeX2 < 0) {
+       shapeX2 = width;
+     }
+     if (shapeY2 > height) {
+       shapeY2 = 0;
+     }
+     if (shapeY2 < 0) {
+       shapeY2 = height;
+     }
+}
+
+function exitMessage(){
+      // exit message
+      textSize(16);
+      text("EXIT", width - 270, height - 10);
+}
+
+function exitCheck () {
+    // exit check
   if (characterX >= width - 270 && characterY >= height - 10) {
     fill(0);
     stroke(5);
     textSize(50);
     text("You Win!", width / 2 - 10, height / 2 - 50);
   }
+}
 
-  // mouse click shape
+function mouseClickShape () {
   fill(69, 150, 100);
   circle(mouseShapeX, mouseShapeY, 25);
 }

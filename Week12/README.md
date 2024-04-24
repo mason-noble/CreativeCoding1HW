@@ -1,1 +1,1 @@
-This is my homework for Week 12. I will be expanding upon my simple game in p5.js.
+This is my homework for Week 12. I will be creating functions out of my code and calling them in my "draw" function.
