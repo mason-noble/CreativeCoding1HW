@@ -1,0 +1,1 @@
+In this folder, I am just going to propose my idea for my final project.
