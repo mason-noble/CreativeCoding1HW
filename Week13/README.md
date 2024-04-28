@@ -1,1 +1,7 @@
-In this folder, I am just going to propose my idea for my final project.
+In this document, I am just going to propose my idea for my final project.
+
+Here is my proposal for my final project! I was thinking of doing something that seems simple but still requires a lot of effort to code, like a snake game! The kind of game where your player character gets bigger or longer upon consuming an object. 
+Obviously, this would be inspired by the Snake genre in general, mostly the game considered to pioneer the genre, Blockade, as well as Snake Byte. It will likely not have too much detail as it's a simple game, but I know something like this will take me a couple of weeks to finish.
+I'm going to have to tackle obstacles like collision, making the snake's "tail" grow longer, and I'll also have to figure out how to add style to p5.js if such a thing is possible as well.
+I'm thinking for this week, I am going to focus on the bare bones of the coding. Figure out how everything will run, collide, etc. Then, next week (or finals week) I'll add flavor and polish and hopefully get the game to *look* good!
+I'm already brainstorming visual assets for the game, which I'll be drawing myself. I already have the setup completed on VSC and I'm experimenting with drawing the character and obstacles to the screen. At this rate, I think I'll be able to have this project well done by the due date.
